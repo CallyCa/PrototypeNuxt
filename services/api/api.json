@@ -1,0 +1,70 @@
+{
+  "transacao": [
+    {
+      "comprador_id": "algum@hotmail.com",
+      "vendedor_id": "algum@hotmail.com",
+      "produto": {
+        "id": "bolo",
+        "nome": "Bolo de cenoura",
+        "usuario_id": "algum@hotmail.com",
+        "preco": "10.99",
+        "vendido": "false",
+        "descricao": "Bolo de cenoura com cobertura de chocolate.",
+        "fotos": null
+      },
+      "endereco": {
+        "rua": "Rua Ali Perto",
+        "numero": "25",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 1
+    }
+  ],
+  "usuario": [
+    {
+      "id": "algum@hotmail.com",
+      "nome": "Cally as",
+      "email": "algum@hotmail.com",
+      "senha": "123",
+      "cep": "12345678",
+      "rua": "Rua Ali Perto",
+      "numero": "25",
+      "bairro": "as",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    {
+      "id": "algum@hotmail.com",
+      "nome": "Cally Jonas",
+      "email": "blackyrite@hotmail.com",
+      "senha": "teste123",
+      "cep": "69172-142",
+      "rua": "Rua P, A",
+      "numero": "91",
+      "bairro": "Naosei",
+      "cidade": "Rio preto",
+      "estado": "Distrito Federal"
+    }
+  ],
+  "produto": [
+    {
+      "id": "bolo",
+      "nome": "Bolo de cenoura",
+      "usuario_id": "algum@hotmail.com",
+      "preco": "10.99",
+      "vendido": "false",
+      "descricao": "Bolo de cenoura com cobertura de chocolate.",
+      "fotos": null
+    },
+    {
+      "id": "pao",
+      "nome": "Pão",
+      "usuario_id": "blackyrite@hotmail.com",
+      "preco": "1.99",
+      "vendido": "false",
+      "descricao": "Pão de forno.",
+      "fotos": null
+    }
+  ]
+}
