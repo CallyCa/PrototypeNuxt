@@ -10,7 +10,7 @@ branches:
   - /v\d+\.\d+[a-z]/
 cache: yarn
 before_install:
-  - npm install --g npm
+  - npm install -g npm
 script:
   - yarn lint --fix
   - npm install
