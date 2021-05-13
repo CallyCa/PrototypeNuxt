@@ -16,3 +16,10 @@ cache: yarn
 script:
   - yarn lint --fix
   # - yarn wdio
+
+deploy:
+    provider: heroku
+    api_key:
+    app: projectdesenv
+    on:
+      repo: CallyCa/PrototypeNuxt
