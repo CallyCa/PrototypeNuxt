@@ -11,10 +11,10 @@ branches:
 cache: yarn
 script:
 - yarn lint --fix
+- yarn wdio
 deploy:
   provider: heroku
-  api_key:
-    secure: $HEROKU_AUTH_TOKEN
+  api_key: $HEROKU_AUTH_TOKEN
   app: $APP
   on:
     repo: $REPOSITORY
