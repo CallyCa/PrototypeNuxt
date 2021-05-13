@@ -6,8 +6,8 @@ os:
 dist: focal
 branches:
   only:
-  - main
   - master
+  - /v\d+\.\d+[a-z]/
 cache: yarn
 script:
 - yarn lint --fix
@@ -16,4 +16,5 @@ deploy:
   api_key: $HEROKU_AUTH_TOKEN
   app: $APP
   on:
-    branch: master
+    repo: $REPOSITORY
+    all_branches: true
