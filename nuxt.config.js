@@ -1,7 +1,7 @@
 export default {
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'Projeto',
+		title: 'Projeto NuxtJS',
 		meta: [
 			{ charset: 'utf-8' },
 			{

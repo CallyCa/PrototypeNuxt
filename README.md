@@ -1,4 +1,4 @@
-# prototipo Nuxt
+# Projeto Nuxt
 
 ## Build Setup
 
