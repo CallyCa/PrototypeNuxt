@@ -14,7 +14,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 03suq0CM48qU9v3hennHPF9w0ohO+GPZ8kKHsXKbOAXFH1fjavCOjhmohL/2akC17sH7pBfftXT84TOlcK2zweAdf2IUznL8Gs3AqRHBZaOPXgaYRHsSWRynSomfLLUfKZJ2ODvkV/iEDmF/H1So/VHzG5Zvt0BM/an+utFjGc6smlxW+daKGZu9PgxrU5qKbtgNM022MYmAEYjFwAgRXhDcndEgMvJy8rpl3Q7kcoyEe1m3uxeSQ2VSedcOHrJ9C4eHw5a6SJMKMjW0TNScMw33E4QMCBRQFxwWrjBwerzwwmtCHmGcKj17Aubs3WhWN6jC6ulmxcD02JdaMVr6AuN79QIE/WT7P0I+J0pb5YYD1MPrjiRo2AfOwETTjS3GeJqhHb0Ek4labATxTJrkhqfIdJ0G9T1tXTHRbVhNzISMyQ6GdpyXs1TtRMMLyD3gJLl8pDcWbDFoycB0hZNtNwYRUgOw5pBGTq6KbixYFoiyY015LJ/pC6IC1jUZhgfJvIlm9OBKjzLEVyks9jvXTWMbXptGORlSJG6j3HjX9IG8oIqytNMPfNZVRhotvMiTxTtM7D5bmOM0pH9f0xr3A2GZ25ffgb4EQrLpOzNcM67nEs1xuhjqTJgSLVp2NtUTtQu/EaYYRA/kzjFHjnMjpztF3jhpqCJgWtWUNbSKezE=
-  app: projectdesenv
+    secure: $HEROKU_AUTH_TOKEN
+  app: $APP
   on:
-    repo: Callyca/PrototypeNuxt
+    repo: $REPOSITORY
