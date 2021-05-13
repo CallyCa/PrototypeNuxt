@@ -16,4 +16,4 @@ deploy:
   api_key: $HEROKU_AUTH_TOKEN
   app: $APP
   on:
-    repo: $REPOSITORY
+    branch: master
