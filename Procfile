@@ -1,1 +1,1 @@
-web: nuxt start
+web: yarn build && yarn nuxt start
