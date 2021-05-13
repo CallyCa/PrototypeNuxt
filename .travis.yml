@@ -1,25 +1,20 @@
 language: node_js
 node_js:
-  - lts/*
-
+- lts/*
 os:
-  - linux
+- linux
 dist: focal
-
 branches:
   only:
-    - main
-    - master
-
+  - main
+  - master
 cache: yarn
-
 script:
-  - yarn lint --fix
-  # - yarn wdio
-
+- yarn lint --fix
 deploy:
-    provider: heroku
-    api_key:
-    app: projectdesenv
-    on:
-      repo: CallyCa/PrototypeNuxt
+  provider: heroku
+  api_key:
+    secure: bZWrkkfYD0+UDWiIlpGiDKYWqTDVn9E83miQPXim86NWHAvzZH4nTA+RvmvLnhSS1Bq/t3xdN/DtB4GMUx9LPbXtWn+5Xg2FppDoONz3Gvw7vqbVQNVkf6lDRztPBNEe+NY96BIIXwUjSo8oPAxYmmo1D3lEpM+sAU3fTiTeaaX4a0UzS4BDprZq+O0CeWIIPSEt6a1PKlWL+zmaWNzZRYf2LKRjhdwoIk3x4/wlVy+rKTWCTe9j/jIHPuHjoEiZktDSN5aaIvXXfypgSUsSJDRf4agCyeOZ1PjCpHOpY4qHZRZmvPesy3g48X44SXWx7W/FwEBEcL5wwEKjOiuQHjS+h8m4pAiVaa7xJiXh53M/zAYTXBmyh9TFIvl9yvSkBax8yhqWt5aXGBiCDVm1r2Qbn3mw5D3ivxRpeAB8e8Z18oqLstEgqMW3G2P12l5twdz67LR4VGGMjCfijwsJ5YW/8NN0+uJvbCbaStk7fzu84pa5G7UqGK/90dbGelZ1NKkGsVqcY5jMLDBrtsqHXdk8eboGvTKl/H6tpzaeF53sNQxeOF47kuus3s6XThuo16bUCwdi7vDnPPa7S9UsxPusF5lwUg866HtyYa0HVhv0KjoyrtPCUSmU/6gXf+6Y+9d/aiT2YFmNsmG3arQoixZKLC3pNuY2ERxsS7O520Q=
+  app: projectdesenv
+  on:
+    repo: CallyCa/PrototypeNuxt
