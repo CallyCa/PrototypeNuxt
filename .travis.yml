@@ -19,7 +19,7 @@ script:
 
 deploy:
     provider: heroku
-    api_key:
+    api_key: "jBr5WYfOaSM3Fkle7se0YMbE4DbMSW8NxiV4htEG5ADK5hVoskZMKaVJzdepQ8UHmcEIlSPqNokLsoCIS8Gi0JCWlVNlibsdkFA6k1rdL/PHbO70HSYEsMiE8QBbbgm/tX/6lhR8v7okApgXUKFgAl/cCAEi+CrM09se/T2BeYJOrsGlkDNCGWzRr8XNKjK9g0/YJFAdxK4QEACRNDH1knYawdFx1XIOGmo42SkxKqKYRUGw9e4uI2MZ7WPTun4Q0M7IvUsBETrivT9KVwm1rxB4ij/gULSyb3Skr/rPfFZPq4R/Do3ERkHMJcNI3rZJwg905qAqj4GL5JZOHuFKyWzfY0Hks+QDM7fs90Zh+vCOuSru99ZO+1pbshd0VKcBTkzAENZiU96W+f6lirx4j9nw4R4Vetpt+tbIzJsceJMGbvvuQeTGJqo2XPvVot+6Psrm13OMmWBJ3LmZUY/r6VNXFYhXtJL+6jG8FHfqjkifDidCLo/FvJu9FT95EVrB12L1P07bTlGAuUoKwTbu7q8b14XUwGpGzWPc9DGwxCjic4aA64+pBKDsyH3Mi1NedDKPSGlTVlIuFH4Jt66DJK5ncgFJUL38Vnah2DgFkf1wAmruBFS5gIizgOiasmJPNTNq+YkDy3FOXtmszexoEojvaWjnJLCZok+CtpVqgp4="
     app: projectdesenv
     on:
       repo: CallyCa/PrototypeNuxt
