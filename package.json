@@ -20,11 +20,11 @@
     "core-js": "^3.9.1",
     "express": "^4.17.1",
     "nuxt": "^2.15.3",
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^6.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
     "@wdio/cli": "^7.2.1",
     "@wdio/local-runner": "^7.2.1",
     "@wdio/mocha-framework": "^7.2.1",
