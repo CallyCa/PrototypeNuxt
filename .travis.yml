@@ -11,10 +11,10 @@ branches:
 cache: yarn
 before_install:
   - npm install --g npm
-  - npm install --g yarn
 script:
   - yarn lint --fix
-  - yarn run pretest
+  - npm install
+  - npm run pretest
 deploy:
   provider: heroku
   api_key: $HEROKU_AUTH_TOKEN
