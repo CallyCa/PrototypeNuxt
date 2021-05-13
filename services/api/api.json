@@ -45,6 +45,36 @@
       "bairro": "Naosei",
       "cidade": "Rio preto",
       "estado": "Distrito Federal"
+    },
+    {
+      "id": "blackyrite@hotmail.com",
+      "nome": "Thiago Cally Rodrigues",
+      "email": "blackyrite@hotmail.com",
+      "senha": "",
+      "cep": "61915-142",
+      "rua": "Rua L, A",
+      "numero": "1002441618",
+      "bairro": "Jaçanaú",
+      "cidade": "Maracanaú",
+      "estado": "Ceará"
+    },
+    {
+      "id": "blackyrites@hotmail.com",
+      "nome": "Thiago Cally Rodrigues",
+      "email": "blackyrites@hotmail.com",
+      "senha": "ddddd",
+      "cep": "61915-142",
+      "rua": "dddd",
+      "numero": "961",
+      "bairro": "Jaçanaú",
+      "cidade": "Maracanaú",
+      "estado": "CE"
+    },
+    {
+      "id": "bRhfFwd"
+    },
+    {
+      "id": "nXOL85u"
     }
   ],
   "produto": [
