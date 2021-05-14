@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .login {
 	max-width: 500px;
 	margin: 0 auto;
@@ -62,10 +62,12 @@ form {
 .perdeu {
 	text-align: center;
 	margin: 20px auto 0 auto;
-}
-.perdeu a:hover {
-	color: rgb(255, 146, 107);
-	text-decoration: underline;
+	a {
+		&:hover {
+			color: rgb(255, 146, 107);
+			text-decoration: underline;
+		}
+	}
 }
 h1 {
 	text-align: center;

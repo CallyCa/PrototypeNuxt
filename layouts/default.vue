@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 * {
 	box-sizing: border-box;
 }
@@ -75,14 +75,32 @@ textarea {
 	font-size: 1rem;
 	font-family: sans-serif;
 	margin-bottom: 15px;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		box-shadow: 0 6px 12px rgba(30, 30, 90, 0.2);
+		border-color: rgb(255, 146, 107);
+	}
 }
 
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-	outline: none;
-	box-shadow: 0 6px 12px rgba(30, 30, 90, 0.2);
-	border-color: rgb(255, 146, 107);
+.btn {
+	display: block;
+	padding: 10px 30px;
+	background: rgb(255, 146, 107);
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+	transition: all 0.3s;
+	border: none;
+	font-family: sans-serif;
+	cursor: pointer;
+
+	&:hover {
+		background: rgb(255, 146, 107);
+		transform: scale(1.1);
+	}
 }
 </style>

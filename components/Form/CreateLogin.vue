@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h2 {
 	text-align: center;
 	margin-top: 40px;
@@ -58,8 +58,8 @@ h2 {
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-}
-.btn-form {
-	max-width: 100%;
+	&-form {
+		max-width: 100%;
+	}
 }
 </style>

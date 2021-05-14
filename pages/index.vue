@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h1 {
 	font-size: 2rem;
 	color: rgb(255, 146, 107);

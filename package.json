@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "heroku-postbuild": "npm run build",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint": "yarn lint:js",
     "test:e2e": "wdio wdio.conf.js"
   },
@@ -20,8 +20,12 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
     "express": "^4.17.1",
+    "node-sass": "^6.0.0",
     "nuxt": "^2.15.3",
-    "vue-router": "^3.5.1"
+    "sass": "^1.32.13",
+    "sass-loader": "10.1.1",
+    "vue-router": "^3.5.1",
+    "webpack": "4.46.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
