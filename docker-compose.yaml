@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: "3.5"
+services:
+  app:
+    build: .
+    environment:
+      HOST: 0.0.0.0
+      NODE_ENV: development
+    ports:
+      - "8000:8000"
+    command: yarn run dev
+    volumes:
+      - .:/app/
+      - /app/node_modules
