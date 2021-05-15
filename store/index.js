@@ -36,7 +36,7 @@ export const mutations = {
 
 export const actions = {
 	getUsuarioProdutos(context) {
-		api.get(`/produto?usuario_id=${context.state.usuario.id}`).then(
+		api.get(`/product?usuario_id=${context.state.usuario.id}`).then(
 			(response) => {
 				context.commit('UPDATE_USUARIO_PRODUTOS', response.data)
 			}

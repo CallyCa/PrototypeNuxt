@@ -1,6 +1,6 @@
 const Page = require('../pageObjects/main.page')
 
-describe('Example test', () => {
+describe('Title test', () => {
 	it('should open correct app', () => {
 		Page.open()
 		expect(browser).toHaveTitle('Projeto NuxtJS')

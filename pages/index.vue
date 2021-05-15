@@ -2,16 +2,19 @@
 	<section>
 		<h1>Comprar Produtos</h1>
 		<ProdSearch />
+		<ListProduct />
 	</section>
 </template>
 
 <script>
 import ProdSearch from '@/components/Product/ProdSearch.vue'
+import ListProduct from '@/components/Product/ListProduct.vue'
 
 export default {
 	name: 'Home',
 	components: {
 		ProdSearch,
+		ListProduct,
 	},
 }
 </script>

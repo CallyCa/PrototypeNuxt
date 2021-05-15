@@ -39,4 +39,11 @@ nav {
 		height: 50px;
 	}
 }
+a {
+	color: white !important;
+}
+
+.btn {
+	padding-top: 7px;
+}
 </style>

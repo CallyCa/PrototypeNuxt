@@ -23,6 +23,7 @@ export default {
 <style lang="scss">
 * {
 	box-sizing: border-box;
+	outline: 0 !important;
 }
 
 body,
@@ -46,8 +47,8 @@ body {
 }
 
 a {
-	color: #345;
-	text-decoration: none;
+	color: #345 !important;
+	text-decoration: none !important;
 }
 
 img {
@@ -75,13 +76,15 @@ textarea {
 	font-size: 1rem;
 	font-family: sans-serif;
 	margin-bottom: 15px;
+}
 
-	&:hover,
-	&:focus {
-		outline: none;
-		box-shadow: 0 6px 12px rgba(30, 30, 90, 0.2);
-		border-color: rgb(255, 146, 107);
-	}
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+	outline: none;
+	box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+	border-color: rgb(255, 146, 107);
 }
 
 .btn {
@@ -102,5 +105,9 @@ textarea {
 		background: rgb(255, 146, 107);
 		transform: scale(1.1);
 	}
+}
+
+label {
+	margin-bottom: 5px;
 }
 </style>

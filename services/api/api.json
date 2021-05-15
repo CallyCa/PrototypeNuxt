@@ -3,7 +3,7 @@
     {
       "comprador_id": "algum@hotmail.com",
       "vendedor_id": "algum@hotmail.com",
-      "produto": {
+      "product": {
         "id": "bolo",
         "nome": "Bolo de cenoura",
         "usuario_id": "algum@hotmail.com",
@@ -80,7 +80,7 @@
       "id": "r9dCp4L"
     }
   ],
-  "produto": [
+  "product": [
     {
       "id": "bolo",
       "nome": "Bolo de cenoura",

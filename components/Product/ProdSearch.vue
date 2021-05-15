@@ -7,7 +7,12 @@
 			type="text"
 			placeholder="Buscar"
 		/>
-		<input id="lupa" type="submit" value="Buscar" />
+		<input
+			id="lupa"
+			type="submit"
+			value="Buscar"
+			@click.prevent="searchProduct"
+		/>
 	</form>
 </template>
 
@@ -18,7 +23,11 @@ export default {
 			busca: '',
 		}
 	},
-	methods: {},
+	methods: {
+		searchProduct() {
+			this.$router.push({ query: { q: this.busca } })
+		},
+	},
 }
 </script>
 
