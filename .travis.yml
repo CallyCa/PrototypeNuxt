@@ -11,6 +11,7 @@ branches:
 cache: yarn
 script:
   - yarn lint --fix
+  - $API
 deploy:
   provider: heroku
   api_key: $HEROKU_AUTH_TOKEN
