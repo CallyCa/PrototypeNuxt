@@ -1,30 +1,44 @@
 <template>
 	<section class="products-container">
-		<div v-if="products && products.length" key="products" class="products">
-			<div v-for="product in products" :key="product.id" class="product">
-				<nuxt-link
-					:to="{ name: 'product', params: { id: product.id } }"
+		<transition mode="out-in">
+			<div
+				v-if="products && products.length"
+				key="products"
+				class="products"
+			>
+				<div
+					v-for="product in products"
+					:key="product.id"
+					class="product"
 				>
-					<img
-						v-if="product.fotos"
-						:src="product.fotos[0].src"
-						:alt="product.fotos[0].titulo"
-					/>
-					<h2 class="title">{{ product.nome }}</h2>
-					<p class="price">
-						{{ product.preco | priceNumber }}
-					</p>
-					<p>{{ product.descricao }}</p>
-				</nuxt-link>
+					<nuxt-link
+						:to="{ name: 'product', params: { id: product.id } }"
+					>
+						<img
+							v-if="product.fotos"
+							:src="product.fotos[0].src"
+							:alt="product.fotos[0].titulo"
+						/>
+						<h2 class="title">{{ product.nome }}</h2>
+						<p class="price">
+							{{ product.preco | priceNumber }}
+						</p>
+						<p>{{ product.descricao }}</p>
+					</nuxt-link>
+				</div>
+				<ListPages
+					:total-products="totalProducts"
+					:products-per-page="productsPerPage"
+				/>
 			</div>
-			<ListPages
-				:total-products="totalProducts"
-				:products-per-page="productsPerPage"
-			/>
-		</div>
-		<div v-else-if="products && products.length === 0" key="sem-resultados">
-			<p class="no-results">Busca sem resultados</p>
-		</div>
+			<div
+				v-else-if="products && products.length === 0"
+				key="sem-resultados"
+			>
+				<p class="no-results">Busca sem resultados</p>
+			</div>
+			<LoadingProducts v-else key="Loading" />
+		</transition>
 	</section>
 </template>
 

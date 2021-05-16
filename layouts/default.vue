@@ -1,8 +1,10 @@
 <template>
 	<div class="layout">
 		<Header />
-		<main id="main">
-			<Nuxt />
+		<main class="main">
+			<transition mode="out-in">
+				<Nuxt />
+			</transition>
 		</main>
 		<Footer />
 	</div>
@@ -62,7 +64,7 @@ img {
 	min-height: 100vh;
 }
 
-#main {
+.main {
 	flex: 1;
 }
 
@@ -109,5 +111,23 @@ textarea:focus {
 
 label {
 	margin-bottom: 5px;
+}
+
+.v-enter,
+.v-leave-to {
+	opacity: 0;
+}
+
+.v-enter {
+	transform: translate3d(0, -20px, 0);
+}
+
+.v-leave-to {
+	transform: translate3d(0, 20px, 0);
+}
+
+.v-enter-active,
+.v-leave-active {
+	transition: all 0.3s;
 }
 </style>

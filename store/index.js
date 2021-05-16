@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import LoadingProducts from '@/components/LoadingProducts/index'
 import { api } from '@/services/index'
 import Vue from 'vue'
 
@@ -70,6 +71,8 @@ export const actions = {
 		context.commit('UPDATE_LOGIN', false)
 	},
 }
+
+Vue.component('LoadingProducts', LoadingProducts)
 
 Vue.filter("priceNumber", value => {
 	value = Number(value);
