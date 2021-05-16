@@ -52,6 +52,9 @@ h2 {
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 10px;
+	font-size: 27px;
+	font-weight: lighter;
+	color: #345;
 }
 .btn {
 	width: 100%;
@@ -60,6 +63,9 @@ h2 {
 	margin-right: auto;
 	&-form {
 		max-width: 100%;
+	}
+	&:hover {
+		color: white !important;
 	}
 }
 </style>

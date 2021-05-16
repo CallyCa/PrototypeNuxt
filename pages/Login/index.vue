@@ -58,13 +58,16 @@ form {
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+	&:hover {
+		color: white !important;
+	}
 }
 .perdeu {
 	text-align: center;
 	margin: 20px auto 0 auto;
 	a {
 		&:hover {
-			color: rgb(255, 146, 107);
+			color: rgb(255, 146, 107) !important;
 			text-decoration: underline;
 		}
 	}

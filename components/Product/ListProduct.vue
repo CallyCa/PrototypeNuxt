@@ -11,10 +11,16 @@
 						:alt="product.fotos[0].titulo"
 					/>
 					<h2 class="title">{{ product.nome }}</h2>
-					<p class="price">{{ product.preco }}</p>
+					<p class="price">
+						{{ product.preco | priceNumber }}
+					</p>
 					<p>{{ product.descricao }}</p>
 				</nuxt-link>
 			</div>
+			<ListPages
+				:total-products="totalProducts"
+				:products-per-page="productsPerPage"
+			/>
 		</div>
 		<div v-else-if="products && products.length === 0" key="sem-resultados">
 			<p class="no-results">Busca sem resultados</p>
@@ -25,16 +31,18 @@
 <script>
 import { api } from '@/services/index'
 import { serialize } from '@/helpers/helpers'
+import ListPages from './ListPages'
 
 export default {
 	name: 'ProductLists',
-	components: {},
+	components: {
+		ListPages,
+	},
 	data() {
 		return {
 			products: null,
-			productsPerPage: 2,
+			productsPerPage: 6,
 			totalProducts: 0,
-			value: '',
 		}
 	},
 	computed: {
@@ -65,21 +73,6 @@ export default {
 				}, 1000)
 			})
 		},
-		// priceProduct() {
-		// 	let value = this.value
-		// 	value = Number(value)
-		// 	if (!isNaN(value)) {
-		// 		return (
-		// 			value.toLocaleString('pt-BR'),
-		// 			{
-		// 				style: 'currency',
-		// 				currency: 'BRL',
-		// 			}
-		// 		)
-		// 	} else {
-		// 		return ''
-		// 	}
-		// },
 	},
 }
 </script>
@@ -88,8 +81,8 @@ export default {
 .products {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 30px;
-	margin: 30px;
+	grid-gap: 80px;
+	margin: 116px auto auto 30px;
 
 	&-container {
 		max-width: 1000px;
