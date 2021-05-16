@@ -6,6 +6,7 @@ os:
 dist: focal
 branches:
   only:
+  - dev
   - master
   - /v\d+\.\d+[a-z]/
 cache: yarn
