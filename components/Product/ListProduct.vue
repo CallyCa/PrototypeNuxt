@@ -7,13 +7,11 @@
 				class="products"
 			>
 				<div
-					v-for="product in products"
-					:key="product.id"
+					v-for="(product, index) in products"
+					:key="index"
 					class="product"
 				>
-					<nuxt-link
-						:to="{ name: 'product', params: { id: product.id } }"
-					>
+					<nuxt-link :to="`/product/${product.id}`">
 						<img
 							v-if="product.fotos"
 							:src="product.fotos[0].src"
@@ -27,8 +25,8 @@
 					</nuxt-link>
 				</div>
 				<ListPages
-					:total-products="totalProducts"
-					:products-per-page="productsPerPage"
+					:totalproducts="totalproducts"
+					:queryproducts="queryproducts"
 				/>
 			</div>
 			<div
@@ -55,14 +53,14 @@ export default {
 	data() {
 		return {
 			products: null,
-			productsPerPage: 6,
-			totalProducts: 0,
+			queryproducts: 6,
+			totalproducts: 0,
 		}
 	},
 	computed: {
 		url() {
 			const query = serialize(this.$route.query)
-			return `/product?_limit=${this.productsPerPage}${query}`
+			return `/product?_limit=${this.queryproducts}${query}`
 		},
 	},
 	watch: {
@@ -80,7 +78,7 @@ export default {
 			this.products = null
 			window.setTimeout(() => {
 				api.get(this.url).then((response) => {
-					this.totalProducts = Number(
+					this.totalproducts = Number(
 						response.headers['x-total-count']
 					)
 					this.products = response.data

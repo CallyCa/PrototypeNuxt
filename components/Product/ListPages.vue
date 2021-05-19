@@ -1,21 +1,21 @@
 <template>
-	<ul v-if="totalProducts > 1">
+	<ul v-if="totalproducts > 1">
 		<nuxt-link :to="{ query: query(1) }">First</nuxt-link>
 		<li v-for="page in listPages" :key="page">
 			<nuxt-link :to="{ query: query(page) }">{{ page }}</nuxt-link>
 		</li>
-		<nuxt-link :to="{ query: query(totalProducts) }">></nuxt-link>
+		<nuxt-link :to="{ query: query(totalproducts) }">></nuxt-link>
 	</ul>
 </template>
 
 <script>
 export default {
 	props: {
-		productsPerPage: {
+		queryproducts: {
 			type: Number,
 			default: 1,
 		},
-		totalProducts: {
+		totalproducts: {
 			type: Number,
 			default: 1,
 		},
@@ -25,7 +25,7 @@ export default {
 			const current = Number(this.$route.query._page)
 			const range = 9
 			const offset = Math.ceil(range / 2)
-			const total = this.totalProducts
+			const total = this.totalproducts
 			const pagesArray = []
 
 			for (let i = 1; i <= total; i++) {
@@ -46,7 +46,7 @@ export default {
 		},
 	},
 	totalPages() {
-		const total = this.totalProducts / this.productsPerPage
+		const total = this.totalproducts / this.queryproducts
 		return total !== Infinity ? Math.ceil(total) : 0
 	},
 }
