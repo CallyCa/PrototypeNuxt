@@ -89,7 +89,7 @@ export default {
 }
 
 .price {
-	color: #e80;
+	color: #ff926b;
 	font-weight: bold;
 	font: 1.5rem;
 	margin-bottom: 40px;

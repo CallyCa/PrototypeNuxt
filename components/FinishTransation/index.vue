@@ -2,7 +2,9 @@
 	<section>
 		<h2>Endereço de Envio</h2>
 		<FormUser>
-			<button @click.prevent="finishBuy">Finalizar Compra</button>
+			<button class="btn" @click.prevent="finishBuy">
+				Finalizar Compra
+			</button>
 		</FormUser>
 	</section>
 </template>
@@ -67,4 +69,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h2 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	background: #ff926b;
+	&:hover {
+		color: white;
+	}
+}
+</style>
