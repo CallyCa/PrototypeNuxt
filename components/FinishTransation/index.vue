@@ -19,7 +19,14 @@ export default {
 	components: {
 		FormUser,
 	},
-	props: ['prod'],
+	props: {
+		options: {
+			type: Object,
+			default() {
+				return {}
+			},
+		},
+	},
 	computed: {
 		...mapState(['usuario']),
 		buy() {

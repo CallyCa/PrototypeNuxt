@@ -81,6 +81,18 @@
     },
     {
       "id": "LvJ1rzJ"
+    },
+    {
+      "id": "Test@email.com",
+      "nome": "test",
+      "email": "Test@email.com",
+      "senha": "123123",
+      "cep": "61915-142",
+      "rua": "Rua L, A",
+      "numero": "91",
+      "bairro": "Jaçanaú",
+      "cidade": "Maracanaú",
+      "estado": "Ceará"
     }
   ],
   "product": [

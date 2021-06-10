@@ -12,7 +12,7 @@
 					<button v-if="!sell" class="btn" @click="sell = true">
 						Comprar
 					</button>
-					<FinishTransation v-else :prod="board" />
+					<FinishTransation v-else :options="board" />
 				</transition>
 				<button v-else class="btn" disabled>Produto vendido</button>
 			</div>
