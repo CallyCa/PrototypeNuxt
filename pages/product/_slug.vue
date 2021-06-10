@@ -102,5 +102,8 @@ export default {
 .btn {
 	margin-top: 60px;
 	width: 200px;
+	&:hover {
+		color: white;
+	}
 }
 </style>
